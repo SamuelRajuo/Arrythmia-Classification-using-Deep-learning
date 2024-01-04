@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to ECG</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #514e4e;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: absolute;
+      bottom: 10;
+      width: 100%;
+    }
+        
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to ECG</h1>
+    <div class="container">
+
+        <a href="#">
+          <h1 class="logo">ECG</h1>
+        </a>
+  
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <ion-icon name="menu-outline" class="open"></ion-icon>
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+  
+        <nav class="navbar" style="text-align: right;">
+          <a href="http://127.0.0.1:5000/home" class="navbar-link">Home</a>
+          <a href="http://127.0.0.1:5000/info" class="navbar-link">Info</a>
+          <a href="http://127.0.0.1:5000/upload" class="navbar-link">Predict</a>
+      
+          
+        </nav>
+  
+      </div>
+  </header>
+
+  <main>
+    <h1 style="text-align: center;">ECG arrhythmia classification using CNN</h1>
+    <p>
+      The electrocardiogram (ECG) is one of the most extensively employed signals used in the diagnosis and prediction of cardiovascular diseases (CVDs). The ECG signals can capture the heart’s rhythmic irregularities, commonly known as arrhythmias. A careful study of ECG signals is crucial for precise diagnoses of patients’ acute and chronic heart conditions. In this study, we propose a two-dimensional (2-D) convolutional neural network (CNN) model for the classification of ECG signals into eight classes; namely, normal beat, premature ventricular contraction beat, paced beat, right bundle branch block beat, left bundle branch block beat, atrial premature contraction beat, ventricular flutter wave beat, and ventricular escape beat. The one-dimensional ECG time series signals are transformed into 2-D spectrograms through short-time Fourier transform. The 2-D CNN model consisting of four convolutional layers and four pooling layers is designed for extracting robust features from the input spectrograms. Our proposed methodology is evaluated on a publicly available MIT-BIH arrhythmia dataset. We achieved a state-of-the-art average classification accuracy of 99.11%, which is better than those of recently reported results in classifying similar types of arrhythmias. The performance is significant in other indices as well, including sensitivity and specificity, which indicates the success of the proposed method.   Cardiovascular diseases (CVDs) are the leading cause of death today. The current identification method of the diseases is analyzing the Electrocardiogram (ECG), which is a medical monitoring technology recording cardiac activity. Unfortunately, looking for experts to analyze a large amount of ECG data consumes too many medical resources. Therefore, the method of identifying ECG characteristics based on machine learning has gradually become prevalent. However, there are some drawbacks to these typical methods, requiring manual feature recognition, complex models, and long training time. This paper proposes a robust and efficient 12-layer deep one-dimensional convolutional neural network on classifying the five micro-classes of heartbeat types in the MIT- BIH Arrhythmia database. The five types of heartbeat features are classified, and wavelet self-adaptive threshold denoising method is used in the experiments. Compared with BP neural network, random forest, and other CNN networks, the results show that the model proposed in this paper has better performance in accuracy, sensitivity, robustness, and anti-noise capability. Its accurate classification effectively saves medical resources, which has a positive effect on clinical practice.
+    </p>
+    
+  </main>
+
+  <footer>
+  
+    <h2>About Us</h2>
+    <p>This website Designed by Srivalli and Team.</p>
+
+    <h2>Contact</h2>
+    <h3>SmartBridge</h3>
+    <p>Let's Bridge the gap between Academics and industries.
+      Plot No 132 2nd Floor, Above DCB </p>
+      <p>Bank HMT Nagar, Nacharam Main</p>
+      <p>Road, Hyderbad-500076</p>
+      <b>Phone:</b><p> +91 40 3511 2535</p>
+      <b>Email:</b><br>
+      <p>info@thesmartbridge.com</p>
+  
+  <p>&copy; 2023 Srivalli and Team Website. All rights reserved.</p>
+</footer>
+</body>
+</html>
